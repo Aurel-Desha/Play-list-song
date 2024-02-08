@@ -123,7 +123,13 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
-
+playButton.addEventListener("click", () => {
+  if (userData?.currentSong === null) {
+    playSong(userData?.songs[0].id);
+  }else {
+    playSong(userData?.currentSong.id);
+  }
+});
 
 userData?.songs.sort((a,b) => {
   if (a.title < b.title) {
@@ -136,5 +142,6 @@ userData?.songs.sort((a,b) => {
 
   return 0;
 });
-  
+
+
 renderSongs(userData?.songs);
