@@ -68,14 +68,7 @@ const allSongs = [
     artist: "Quincy Larson",
     duration: "3:10",
     src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/the-surest-way-out-is-through.mp3",
-  },
-  {
-    id: 9,
-    title: "Chasing That Feeling",
-    artist: "Quincy Larson",
-    duration: "2:43",
-    src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
-  },
+  }
 ];
 
 const audio = new Audio();
